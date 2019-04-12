@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4c9aa5a-c8b9-4df1-a95c-00cf8cb3e966" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/channels/room_channel.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/rooms/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/warden_hooks.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -32,6 +30,7 @@
           <entry key="css" value="1" />
           <entry key="erb" value="15" />
           <entry key="js" value="3" />
+          <entry key="md" value="1" />
           <entry key="rb" value="20" />
           <entry key="scss" value="3" />
           <entry key="yml" value="2" />
@@ -41,6 +40,7 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="JavaScript" value="3" />
+          <entry key="Markdown" value="1" />
           <entry key="RHTML" value="15" />
           <entry key="Ruby" value="22" />
           <entry key="SCSS" value="3" />
@@ -53,6 +53,7 @@
           <entry key="css" value="3" />
           <entry key="erb" value="319" />
           <entry key="js" value="1" />
+          <entry key="md" value="71" />
           <entry key="rb" value="359" />
           <entry key="scss" value="11" />
           <entry key="yml" value="60" />
@@ -62,6 +63,7 @@
         <counts>
           <entry key="CSS" value="3" />
           <entry key="JavaScript" value="1" />
+          <entry key="Markdown" value="71" />
           <entry key="RHTML" value="319" />
           <entry key="Ruby" value="482" />
           <entry key="SCSS" value="11" />
@@ -117,20 +119,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/rooms/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+            <state relative-caret-position="257">
+              <caret line="55" column="29" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/room_message.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -176,6 +181,7 @@
       <find>username</find>
       <find>gravatar_url(current_user)</find>
       <find>gravatar_url</find>
+      <find>data-role</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -216,6 +222,7 @@
         <option value="$PROJECT_DIR$/app/views/devise/shared/_navigation_bar.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_navigation_bar.html.erb" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -514,12 +521,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1555052882641</updated>
-      <workItem from="1555052886421" duration="12995000" />
+      <workItem from="1555052886421" duration="13825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12995000" />
+    <option name="totallyTimeSpent" value="13825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="610" y="53" width="1043" height="812" extended-state="0" />
@@ -776,8 +783,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rooms/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+        <state relative-caret-position="257">
+          <caret line="55" column="29" selection-start-line="55" selection-start-column="20" selection-end-line="55" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
