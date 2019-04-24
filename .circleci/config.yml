@@ -24,7 +24,8 @@ jobs:
           MYSQL_ALLOW_EMPTY_PASSWORD: true
     steps:
       - checkout
-      
+      - run: sudo apt-get install mysql-client
+     
       - run:
           name: Mysql database
           command: mysql  -h 127.0.0.1 -u root -e "create database mate;"
