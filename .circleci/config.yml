@@ -12,6 +12,16 @@ jobs:
           PGUSER: circleci-demo-ruby
           RAILS_ENV: test
           MYSQL_ROOT_PASSWORD: password
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_DB: rails_chat_tutorial
+          MYSQL_USER: root
+          MYSQL_ALLOW_EMPTY_PASSWORD: true
+          MYSQL_PASSWORD:
+      - image: mysql:5.7
+        command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_bin --innodb-large-prefix=true --innodb-file-format=Barracuda
+        environment:
+          MYSQL_USER: root
+          MYSQL_ALLOW_EMPTY_PASSWORD: true
     steps:
       - checkout
       - run: sudo apt-get install -y libzip-dev
@@ -23,8 +33,10 @@ jobs:
       - run: sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password password'
       - run: sudo apt-get -y install mysql-server
       - run: sudo service mysql start
-      - run: mysql -u root -ppassword
 
+      - run:
+          name: Mysql database
+          command: mysql  -h 127.0.0.1 -u root -e "create database mate;"
       # Which version of bundler?
       - run:
           name: Which bundler?
