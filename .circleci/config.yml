@@ -11,11 +11,11 @@ jobs:
           PGHOST: 127.0.0.1
           PGUSER: circleci-demo-ruby
           RAILS_ENV: test
-      - image: circleci/mysql:5.7.18
+      - image: tkuchiki/delayed-mysql
         environment:
-         MYSQL_ALLOW_EMPTY_PASSWORD: yes
-         MYSQL_USER: root
-         MYSQL_HOST: 127.0.0.1
+          MYSQL_ALLOW_EMPTY_PASSWORD: yes
+          MYSQL_ROOT_PASSWORD: ''
+          MYSQL_DATABASE: circleci
     steps:
       - checkout
 
@@ -43,6 +43,9 @@ jobs:
       - run:
           name: Wait for DB
           command: dockerize -wait tcp://localhost:3306 -timeout 1m
+      - run:
+          name: MySQL version
+          command: bundle exec ruby mysql_version.rb
 
       - run:
           name: Database setup
