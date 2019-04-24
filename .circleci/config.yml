@@ -16,6 +16,7 @@ jobs:
           MYSQL_DB: rails_chat_tutorial
           MYSQL_USER: root
           MYSQL_ALLOW_EMPTY_PASSWORD: true
+          MYSQL_PASSWORD:
       - image: mysql:5.7
         command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_bin --innodb-large-prefix=true --innodb-file-format=Barracuda
         environment:
@@ -23,7 +24,7 @@ jobs:
           MYSQL_ALLOW_EMPTY_PASSWORD: true
     steps:
       - checkout
-      - run: sudo apt-get install mysql-client
+
      
       - run:
           name: Mysql database
@@ -53,6 +54,7 @@ jobs:
           name: Wait for DB
           command: dockerize -wait tcp://localhost:3306 -timeout 1m
 
+      - run: sudo apt-get install mysql-client
       - run:
           name: Database setup
           command: bin/rails db:schema:load --trace
