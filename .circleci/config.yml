@@ -13,10 +13,9 @@ jobs:
           RAILS_ENV: test
       - image: circleci/mysql:5.7.18
         environment:
-         MYSQL_ALLOW_EMPTY_PASSWORD: true
+         MYSQL_ALLOW_EMPTY_PASSWORD: yes
          MYSQL_USER: "root"
          MYSQL_HOST: "localhost"
-         MYSQL_ROOT_HOST: %
     steps:
       - checkout
 
