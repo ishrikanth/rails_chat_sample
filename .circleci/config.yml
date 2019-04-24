@@ -12,7 +12,7 @@ jobs:
           PGUSER: circleci-demo-ruby
           RAILS_ENV: test
       - image: circleci/mysql:5.7.18
-          env:
+          environment:
             MYSQL_ALLOW_EMPTY_PASSWORD: true
             MYSQL_USER: root
             MYSQL_ROOT_HOST: %
