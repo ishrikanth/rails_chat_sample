@@ -18,7 +18,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   host: localhost
-  user: postgres
+  user: <%= ENV.fetch("PGUSER") %>
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -59,7 +59,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  user: postgres
+  user: <%= ENV.fetch("PGUSER") %>
   database: rails_chat_tutorial
 
 # As with config/secrets.yml, you never want to store sensitive information,
