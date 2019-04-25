@@ -42,6 +42,7 @@ gem 'execjs'
 gem 'therubyracer'
 
 gem 'rspec-rails'
+gem 'rspec_junit_formatter'
 
 
 group :development, :test do
