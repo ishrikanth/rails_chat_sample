@@ -47,5 +47,5 @@ test:
 production:
   <<: *default
   database: rails_chat_tutorial
-  username: reprting
+  username: root
   password: <%= ENV['REPRTING_DATABASE_PASSWORD'] %>
